@@ -62,18 +62,18 @@ def lista_pastas_e_arquivos(caminho):
         if pastas_arquivos:
             return pastas_arquivos
         else:
-            return "Nenhuma pasta ou arquivo encontrado no diretório."
+            messagebox.showinfo("Informação",f"Nenhuma pasta ou arquivo encontrado no diretório.")
     
     else:
-        return f"O diretório {caminho} não foi encontrado."
+        messagebox.showinfo("Informação",f"O diretório {caminho} não foi encontrado.")
 
 
 # Cria a janela principal
 janela = tk.Tk()
-janela.title("Interface Gráfica com Tkinter")
+janela.title("Relatorio de Quantidade de paginas a serem imprimidas")
 
 # Define o tamanho da janela
-janela.geometry("300x150")  # Largura x Altura
+janela.geometry("400x190")  # Largura x Altura
 
 # Centraliza a janela na tela
 janela.eval('tk::PlaceWindow . center')
